@@ -1,0 +1,9 @@
+<h1><%= @todo.name %></h1>
+
+<h2>Status: <%= @todo.complete ? "Done" : "Not Done" %></h2>
+
+<p> <%= @todo.description %></p>
+
+<% if @todo.completion_date != nil %>
+    <p><%= @todo.completion_date.strftime("%A, %b %d") %></p>
+<% end %>
